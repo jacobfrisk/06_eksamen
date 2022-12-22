@@ -1,11 +1,11 @@
 @font-face {
   font-family: "bold";
-  src: url(/fonts/calibremedium-webfont.woff2);
+  src: url(../fonts/calibremedium-webfont.woff2);
 }
 
 @font-face {
   font-family: "regular";
-  src: url(/fonts/calibreregular-webfont.woff2);
+  src: url(../fonts/calibreregular-webfont.woff2);
 }
 
 :root {
