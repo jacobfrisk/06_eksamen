@@ -46,7 +46,7 @@ input::placeholder {
 }
 
 .contact__subheader {
-  font-size: var(--h3-fs);
+  font-size: var(--p-fs);
   margin-bottom: var(--m-spacing);
 }
 
