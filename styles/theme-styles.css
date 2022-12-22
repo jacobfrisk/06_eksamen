@@ -19,7 +19,7 @@
 }
 
 article > * {
-  height: 80vh;
+  height: 100vh;
 }
 
 /* VIDEN */
@@ -27,6 +27,7 @@ article > * {
 .theme__knowlegde__section {
   display: grid;
   place-items: center;
+  animation: intro-load 1s ease-in-out;
 }
 
 .theme__knowledge__section__text {
@@ -75,5 +76,15 @@ article > * {
 
   .theme__competence__section__img {
     grid-column: 2;
+  }
+}
+
+@keyframes intro-load {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
   }
 }
