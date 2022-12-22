@@ -241,6 +241,10 @@ footer {
   font-size: var(--xs-fs);
 }
 
+span.link {
+  cursor: pointer;
+}
+
 .link {
   position: relative;
 }
@@ -328,6 +332,10 @@ footer {
 }
 
 @media (max-width: 810px) {
+  .breadcrumb {
+    display: none;
+  }
+
   header {
     display: block;
   }

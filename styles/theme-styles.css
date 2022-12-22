@@ -7,6 +7,13 @@
   color: var(--subheader-clr);
 }
 
+.breadcrumb {
+  position: fixed;
+  transform: rotate(270deg);
+  top: 15rem;
+  left: -16px;
+}
+
 .breadcrumb li:not(:last-child)::after {
   display: inline-block;
   margin: 0 0.25rem;
