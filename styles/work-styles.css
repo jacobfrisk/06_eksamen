@@ -1,0 +1,47 @@
+@media (min-width: 1220px) {
+  .semester__theme__card {
+    display: flex;
+    gap: var(--l-spacing);
+  }
+
+  .semester__theme__card__copy:nth-of-type(odd) {
+    order: 2;
+  }
+}
+
+.semester__header {
+  margin-bottom: var(--l-spacing);
+}
+
+.semester__theme__card {
+  background-color: var(--card-clr);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: var(--xl-spacing);
+}
+
+.semester__theme__card__header {
+  font-size: var(--h2-fs);
+}
+
+.semester__theme__card__subheader {
+  font-size: var(--s-fs);
+  font-weight: inherit;
+  color: var(--subheader-clr);
+}
+
+.semester__theme__card__content__subheader {
+  font-size: var(--h4-fs);
+  margin-top: var(--m-spacing);
+  margin-bottom: var(--xss-spacing);
+}
+
+.semester__theme__card__content__button {
+  background-color: var(--accent-clr);
+  padding: 1rem;
+}
+
+/* body > * {
+  filter: invert(100%);
+} */

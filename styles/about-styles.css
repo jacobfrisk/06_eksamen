@@ -1,0 +1,82 @@
+@media (min-width: 810px) {
+  .about {
+    display: flex;
+    gap: var(--l-spacing);
+    place-items: center;
+  }
+  .section__skills,
+  .cv {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .cv {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.portrait {
+  max-height: 400px;
+}
+
+.about__section__copy__header {
+  font-size: var(--h2-fs);
+}
+
+.about__section__copy__subheader {
+  font-size: var(--p-fs);
+}
+
+.about__section__copy__intro {
+  margin-block: var(--m-spacing);
+}
+
+.section__header {
+  margin-top: var(--xl-spacing);
+  margin-bottom: var(--l-spacing);
+  font-size: var(--h3-fs);
+}
+
+.section__icon {
+  width: 100px;
+  margin-bottom: var(--xs-spacing);
+}
+
+.section__skills__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.section__skills {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: var(--xl-spacing);
+}
+
+.section__skills__item > p:nth-child(2) {
+  margin-top: auto;
+}
+
+.work__place {
+  font-family: "bold";
+}
+
+.cv__section__item {
+  margin-bottom: var(--m-spacing);
+}
+
+.cv__section__item__link {
+  text-decoration: underline;
+}
+
+.divider-vertical {
+  width: 3px;
+  margin: 40px;
+  background: var(--border-clr);
+}

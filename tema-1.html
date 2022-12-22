@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles/global-styles.css" />
+    <link rel="stylesheet" href="styles/theme-styles.css" />
+    <title>Tema 1 | Jacob Friis Strand</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-hamburger">
+        <a href="index.html" aria-label="Home"><img class="logo" src="icons/peritia-logo.png" alt="Logo" /></a>
+        <button class="toggle-btn">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><a class="link" href="about.html">Om</a></li>
+          <li><a class="link" href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li><a class="link" href="index.html">Hjem</a></li>
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><span class="link" aria-current="page">Tema 1</span></li>
+        </ul>
+      </nav>
+      <article>
+        <div class="theme__knowlegde__section">
+          <p class="theme__knowledge__section__text">I Tema 1 lærte vi blandt andet at bruge Adobe XD til at lave et præsentationskort om os selv. Vi blev introduceret til text-tool, shapes, fill og gradients. Vi lærte også at importere billeder og at anvende fonte.</p>
+        </div>
+        <div class="theme__skills__section">
+          <p class="theme__skills__section__text">
+            Jeg valgte at lave mit præsentationskort ved at farve udvalgte tekststykker med rød ved at lave en rød firkant ovenpå den tekst jeg ville have farvet, og herefter ‘maske’ sådan at teksten blev farvet rød. Ydermere brugte jeg masking med en gradient henover mit billede
+            i samme farve og sammen med transparens, for at give en skyggelignende effekt.
+          </p>
+          <video class="gif" loop autoplay muted src="videos/tema-1-demonstration.webm"></video>
+        </div>
+        <div class="theme__competence__section">
+          <p class="theme__competence__section__text">
+            Grunden til at jeg valgte at bruge disse værktøjer i mit præsentationskort var for at øve mig i de værktøjer, vi lærte i undervisningen. Jeg kunne også have valgt at farve teksten ved at opdele ordene som deres eget element og give dem den røde farve, men valgte at
+            holde det samlet for nemt at kunne rykke rundt på elementerne.
+          </p>
+          <img src="img/praesentationskort.webp" alt="" class="theme__competence__section__img" />
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
+      <div class="contact-icons">
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

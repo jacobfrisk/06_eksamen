@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles/global-styles.css" />
+    <link rel="stylesheet" href="styles/index-styles.css" />
+    <title>Hjem | Jacob Friis Strand</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-hamburger">
+        <a href="index.html" aria-label="Home"><img class="logo" src="icons/peritia-logo.png" alt="Logo" /></a>
+        <button class="toggle-btn">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><a class="link" href="about.html">Om</a></li>
+          <li><a class="link" href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h1 class="intro__header">Hej!</h1>
+        <h2 class="intro__subheader">Mit navn er Jacob Friis Strand.</h2>
+        <div class="intro__copy">
+          <p class="intro__copy__text">Jeg studerer multimediedesign på KEA.</p>
+          <p class="intro__copy__text">Dette er min portfolio af projekter jeg laver under min uddannelse, samt beskrivelser af læringsmål og hvordan jeg opnår dem.</p>
+        </div>
+        <div class="intro__cta">
+          <button type="button" onclick="location.href='work.html'" class="cta">Se min portfolio</button>
+          <button type="button" onclick="location.href='contact.html'" class="cta">Kontakt mig</button>
+        </div>
+        <img class="landing-page-portrait" src="img/landing-page-portrait.webp" alt="" />
+      </section>
+    </main>
+    <footer>
+      <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
+      <div class="contact-icons">
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
