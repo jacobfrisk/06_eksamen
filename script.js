@@ -37,10 +37,10 @@ window.addEventListener("scroll", function () {
 });
 
 //invert når nav-link klikkes
-const navLinks = document.querySelectorAll(".link");
+// const navLinks = document.querySelectorAll(".link");
 
-navLinks.addEventListener("click", invertColors);
+// navLinks.addEventListener("click", invertColors);
 
-function invertColors() {
-  console.log("det virker");
-}
+// function invertColors() {
+//   console.log("det virker");
+// }

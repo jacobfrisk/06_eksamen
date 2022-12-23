@@ -304,8 +304,8 @@ span.link {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  width: 2em;
-  height: 4px;
+  width: 2.3em;
+  height: 2.5px;
   background: var(--font-clr);
   margin-top: 8px;
 
@@ -333,6 +333,10 @@ span.link {
 
 @media (max-width: 810px) {
   .breadcrumb {
+    display: none;
+  }
+
+  button img {
     display: none;
   }
 
@@ -385,4 +389,15 @@ span.link {
 .gif {
   width: 500px;
   object-fit: contain;
+}
+
+button {
+  display: flex;
+  gap: 0.3rem;
+  place-items: center;
+}
+
+button img {
+  width: 20px;
+  padding-bottom: 3px;
 }
