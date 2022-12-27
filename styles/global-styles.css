@@ -401,25 +401,3 @@ button img {
   width: 20px;
   padding-bottom: 3px;
 }
-
-.loading-animation {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: rgb(0, 0, 0); /* or any other color or image */
-  z-index: 9999; /* make sure it appears above other elements */
-}
-
-.loading-animation {
-  /* other styles */
-  transition: all 0.5s ease-in-out; /* add a transition */
-  opacity: 0; /* initially hidden */
-  transform: translateY(100%); /* initially off screen */
-}
-
-.loading-animation.visible {
-  opacity: 1; /* make it visible */
-  transform: translateY(0); /* bring it on screen */
-}

@@ -44,15 +44,3 @@ window.addEventListener("scroll", function () {
 // function invertColors() {
 //   console.log("det virker");
 // }
-
-const link = document.querySelector(".link");
-const animation = document.querySelector(".loading-animation");
-
-link.addEventListener("click", function (event) {
-  event.preventDefault(); // prevent the link from navigating to the other page
-  animation.classList.add("visible"); // show the animation
-
-  animation.addEventListener("transitionend", function () {
-    window.location.href = link.href; // navigate to the other page
-  });
-});
