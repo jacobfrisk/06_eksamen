@@ -13,7 +13,6 @@
     <title>Home | Jacob Friis Strand</title>
   </head>
   <body>
-    <div class="loading-animation"></div>
     <header>
       <div class="logo-hamburger">
         <a href="index.html" aria-label="Home"><img class="logo" src="icons/peritia-logo.png" alt="Logo" /></a>
@@ -28,8 +27,34 @@
           <li><a class="link" href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><span class="link" aria-current="page">Tema 2</span></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <article>
+        <div class="theme__knowlegde__section">
+          <p class="theme__knowledge__section__text">
+            I tema 2 lærte vi blandt andet om flexbox og grid, som er måder at skabe et layout af HTML elementer i CSS. <br />
+            Flexbox virker kun i en dimension (en række eller kolonne), hvorimod grid virker i to dimensioner, rækker og kolonner.
+          </p>
+        </div>
+        <div class="theme__skills__section">
+          <p class="theme__skills__section__text">
+            På forsiden af mit emnesite valgte jeg at bruge grid til at lave et layout af to billeder, der overlapper hinanden. Dette gjorde jeg ved at lave en container med de to billeder og lave et grid med tre kolonner. Herefter gav jeg de individuelle billeder deres grid
+            positioner, sådan at de kunne overlappe hinanden, ved at de begge spænder indover hinandens grid kolonne og grid række.
+          </p>
+          <video class="gif" loop autoplay muted src="videos/tema-2-demonstration.webm"></video>
+        </div>
+        <div class="theme__competence__section">
+          <p class="theme__competence__section__text">Jeg ville ikke kunne opnå det ønskede layout ved at bruge flexbox, da det kun er en-dimensionelt, og billederne derfor kun ville kunne stå ved siden af hinanden eller ovenpå hinanden.</p>
+          <img src="img/tema-2-produkt.webp" alt="" class="theme__competence__section__img" />
+        </div>
+      </article>
+    </main>
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">

@@ -26,9 +26,8 @@
 }
 
 article > * {
-  height: 100vh;
+  padding-block: 20vh;
 }
-
 /* VIDEN */
 
 .theme__knowlegde__section {
@@ -84,11 +83,23 @@ article > * {
   .theme__competence__section__img {
     grid-column: 2;
   }
+
+  .ux__skills__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--m-spacing);
+    place-items: center;
+  }
+
+  .ux-forbedring-img {
+    display: flex;
+    gap: var(--m-spacing);
+  }
 }
 
 @keyframes intro-load {
   0% {
-    transform: translateY(30%);
+    transform: translateY(5%);
     opacity: 0;
   }
   100% {

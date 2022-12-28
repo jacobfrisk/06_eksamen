@@ -35,12 +35,3 @@ var logo = document.querySelector(".logo");
 window.addEventListener("scroll", function () {
   logo.style.transform = "rotate(" + window.pageYOffset + "deg)";
 });
-
-//invert når nav-link klikkes
-// const navLinks = document.querySelectorAll(".link");
-
-// navLinks.addEventListener("click", invertColors);
-
-// function invertColors() {
-//   console.log("det virker");
-// }
