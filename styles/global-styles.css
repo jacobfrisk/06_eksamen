@@ -10,7 +10,7 @@
 
 :root {
   /* colors */
-  --bg-clr: hsl(0, 0%, 96%);
+  --bg-clr: rgb(245, 245, 245);
   --card-clr: hsl(0, 0%, 90%);
   --subheader-clr: hsl(0, 0%, 20%);
   --font-clr: hsl(0, 0%, 7%);
@@ -162,12 +162,14 @@ button {
   background-color: var(--accent-clr);
   padding: var(--xxs-spacing) var(--xs-spacing);
   font-size: var(--s-fs);
+  /* font-weight: bold; */
   border-radius: var(--border-radius);
   margin-block: var(--m-spacing);
   transition: 170ms ease-in-out;
   cursor: pointer;
   width: fit-content;
   border: none;
+  height: fit-content;
 }
 
 .cta:hover {
@@ -269,7 +271,7 @@ span.link {
 }
 
 .logo {
-  width: 50px;
+  width: clamp(2.1875rem, 1.9712rem + 0.9615vw, 3.125rem);
 }
 
 .some-icon {
@@ -305,7 +307,7 @@ span.link {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  width: 2.3em;
+  width: 2em;
   height: 2.5px;
   background: var(--font-clr);
   margin-top: 8px;
@@ -347,6 +349,7 @@ span.link {
 
   .hamburger {
     margin-top: 20px;
+    margin-left: 13px;
   }
 
   footer {
@@ -378,12 +381,15 @@ span.link {
     position: absolute;
     height: 100%;
     width: 100%;
-    /* backdrop-filter: blur(6px); */
+    position: fixed;
     background-color: var(--bg-clr);
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .nav-links.shown a {
     font-size: 3rem;
+  }
+  .nav-links.shown li {
+    margin-bottom: var(--xxl-spacing);
   }
 }
 
@@ -396,7 +402,6 @@ span.link {
 
 .gif {
   width: 500px;
-  object-fit: contain;
 }
 
 button {
@@ -408,4 +413,9 @@ button {
 button img {
   width: 20px;
   padding-bottom: 3px;
+}
+
+img:not(.logo),
+video {
+  border-radius: var(--border-radius);
 }

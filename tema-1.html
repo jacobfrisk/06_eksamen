@@ -20,7 +20,7 @@
           <span class="hamburger"></span>
         </button>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a class="link" href="work.html">Portfolio</a></li>
           <li><a class="link" href="about.html">Om</a></li>
@@ -36,30 +36,31 @@
     </header>
     <main>
       <article>
-        <div class="theme__knowlegde__section">
-          <p class="theme__knowledge__section__text">I Tema 1 lærte vi blandt andet at bruge Adobe XD til at lave et præsentationskort om os selv. Vi blev introduceret til text-tool, shapes, fill og gradients. Vi lærte også at importere billeder og at anvende fonte.</p>
+        <div class="two-col">
+          <p>I Tema 1 lærte vi blandt andet at bruge Adobe XD til at lave et præsentationskort om os selv. Vi blev introduceret til text-tool, shapes, fill og gradients.</p>
+          <img class="theme-icon" src="icons/adobe-xd-icon.svg" alt="Adobe XD ikon" />
         </div>
-        <div class="theme__skills__section">
-          <p class="theme__skills__section__text">
-            Jeg valgte at lave mit præsentationskort ved at farve udvalgte tekststykker ved at lave en rød firkant ovenpå den tekst jeg ville have farvet, og herefter ‘maske’ sådan at teksten blev farvet rød. Ydermere brugte jeg masking med en gradient henover mit billede i samme
-            farve og sammen med transparens og background blur, for at give en skyggelignende effekt.
+        <div class="two-col">
+          <p>
+            Vi lærte også at importere billeder og at anvende fonte. Jeg valgte at lave mit præsentationskort ved at farve udvalgte tekststykker ved at lave en rød firkant ovenpå den tekst jeg ville have farvet, og herefter ‘maske’ sådan at teksten blev farvet rød. Ydermere
+            brugte jeg masking med en gradient henover mit billede i samme farve og sammen med transparens og background blur, for at give en skyggelignende effekt.
           </p>
-          <video class="gif" loop autoplay muted src="videos/tema-1-demonstration.webm"></video>
+          <video loop autoplay muted src="videos/tema-1-demonstration.webm"></video>
         </div>
-        <div class="theme__competence__section">
-          <p class="theme__competence__section__text">Grunden til at jeg valgte at bruge disse værktøjer i mit præsentationskort var for at øve mig i de værktøjer, vi lærte i undervisningen.</p>
-          <img src="img/praesentationskort.webp" alt="" class="theme__competence__section__img" />
+        <div class="two-col slide-in-right">
+          <p class="slide-in-right">Grunden til at jeg valgte at bruge disse værktøjer i mit præsentationskort var for at øve mig i de værktøjer, vi lærte i undervisningen.</p>
+          <img src="img/praesentationskort.webp" alt="præsentationskort" />
         </div>
       </article>
     </main>
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">
-        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instagram icon" /></a>
         <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
         <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>

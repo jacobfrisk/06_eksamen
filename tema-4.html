@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles/global-styles.css" />
     <link rel="stylesheet" href="styles/theme-styles.css" />
-    <title>Home | Jacob Friis Strand</title>
+    <title>Tema 4 | Jacob Friis Strand</title>
   </head>
   <body>
     <header>
@@ -27,16 +27,45 @@
           <li><a class="link" href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><span class="link" aria-current="page">Tema 4</span></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <article>
+        <div class="two-col">
+          <p>På dette tema blev jeg introduceret til JavaScript. Temaet endte ud med jeg producerede et spil der bestod af CSS animationer, der blev gjort interaktive med JavaScript.</p>
+          <img class="theme-icon" src="icons/js-icon.svg" alt="" />
+        </div>
+        <div class="two-col">
+          <p>
+            Mit spil går ud på at få elementer til at falde fra toppen af skærmen, hvorefter at man skal klikke på de gode ting for at få point, og undgå de dårlige ting. Alle tingene har en position de falder ned fra, som er bestemt ved at give hver ting en forskellig klasse der
+            har en position på x og y aksen ved at bruge top og left til at positionere elementerne.
+          </p>
+          <img src="img/position-example-tema-4.webp" alt="positioner givet ved hjælp af klasser i CSS" />
+        </div>
+        <div class="one-col">
+          <p>
+            Jeg ønskede at opnå at tingene ikke blev ved med at falde ned fra den samme position, og derfor valgte jeg at benytte math.random funktionen i JavaScript til at give hver ting en ny random position ved at lave en variable der hedder randomPos. Denne variable bruger
+            math.random til at vælge et tilfældigt tal mellem 1 og 6, svarende til de 6 positioner jeg har defineret i CSS. Herefter kunne randomPos bruges i sammenhæng med addClass, der tilføjer en ny CSS klasse til alle de ting, der falder ned fra skærmen. På den måde kunne jeg
+            opnå at tingene fik en ny position, hvergang de genstartede.
+          </p>
+          <img src="img/math-random-eksempel-tema-4.webp" alt="math random eksempel" />
+        </div>
+        <div class="btn-container"><button class="cta" onclick="location.href='https://www.jacobstrand.dk/kea/04_animation/website/index.html'">Se mit færdige spil her</button></div>
+      </article>
+    </main>
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">
-        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instagram icon" /></a>
         <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
         <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>

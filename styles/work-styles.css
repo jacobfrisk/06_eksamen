@@ -42,6 +42,18 @@
   padding: 1rem;
 }
 
-/* body > * {
-  filter: invert(100%);
-} */
+.semester__theme__card img video {
+  border-radius: var(--border-radius);
+}
+
+div.semester__theme__card:nth-child(5) > img:nth-child(2) {
+  object-fit: contain;
+}
+
+.scroll-tracker {
+  height: 0.5rem;
+  background-color: var(--accent-clr);
+  position: fixed;
+  inset: 0 0 auto;
+  transform-origin: left;
+}

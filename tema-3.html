@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles/global-styles.css" />
     <link rel="stylesheet" href="styles/theme-styles.css" />
-    <title>Home | Jacob Friis Strand</title>
+    <title>Tema 3 | Jacob Friis Strand</title>
   </head>
   <body>
     <header>
@@ -20,48 +20,60 @@
           <span class="hamburger"></span>
         </button>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a class="link" href="work.html">Portfolio</a></li>
           <li><a class="link" href="about.html">Om</a></li>
           <li><a class="link" href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><span class="link" aria-current="page">Tema 3</span></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <article>
-        <div class="theme__knowlegde__section">
-          <p class="theme__knowledge__section__text">
-            I temaet "Grundlæggende UX" lærte vi forskellige måder at teste et koncept eller en hjemmeside. Vi blev introduceret til både kvantitative og kvalitative metode, hvilket er researchmetoder der har til formål at give et indblik i brugerens adfærd, sådan at man som UX
-            designer kan skræddersy et site eller et produkt sådan at det henvender sig til brugeren.
+        <div class="two-col">
+          <p>
+            I temaet "Grundlæggende UX" lærte vi forskellige måder at teste et koncept eller en hjemmeside. Vi blev introduceret til både kvantitative og kvalitative metoder der har til formål at give et indblik i brugerens adfærd, sådan at man som UX designer kan skræddersy et
+            site eller et produkt sådan at det henvender sig til brugeren.
           </p>
+          <img src="img/ux-placeholder.webp" alt="ux'er der arbejder" />
         </div>
-        <div class="theme__skills__section__ux">
-          <p class="theme__skills__section__text">
+        <div class="two-col">
+          <p>
             Jeg lavede et koncept der sælger t-shirts, og ved hjælp af five-act-interview fik jeg indsigter i, hvad der kunne forbedre brugeroplevelsen på mit site. I five-act-interview metoden er der en testperson, en observatør og en test facilitator. Testen går ud på, at
             testpersonen får nogle opgaver der skal løses på sitet, og herefter kommentere på, hvad personen oplever når disse opgaver løses. Min rolle var at være observatør, hvor jeg noterede hvad testpersonen oplevede. Desuden gives der også et indblik i testpersonens baggrund
-            og interesser, da denne information kan være relevant i forhold til hvilken målgruppe, konceptet henvender sig til.
+            og interesser samt tøjstil, da denne information kan være relevant i forhold til hvilken målgruppe, konceptet henvender sig til.
           </p>
-          <div class="ux__skills__img"><img src="img/five-act-noter-1.webp" alt="" /><img src="img/five-act-noter-2.webp" alt="" /><img src="img/five-act-noter-3.webp" alt="" /></div>
+          <div class="three-col"><img src="img/five-act-noter-1.webp" alt="five act noter" /><img src="img/five-act-noter-2.webp" alt="five act noter" /><img src="img/five-act-noter-3.webp" alt="five act noter" /></div>
         </div>
-        <div class="theme__competence__section">
-          <p class="theme__competence__section__text">
-            Jeg fik feedback på, at mit nyhedsbrev felt var placeret ’gemt’ nede i footeren. Af den grund har jeg valgt at lave det til en pop-up modal, der kommer efter man accepterer cookies, og fjernet den fra footeren, så brugeren er tvunget til at tage et valg, samt at den
+        <div class="two-col">
+          <p>
+            Jeg fik feedback på, at mit nyhedsbrev felt var placeret ’gemt’ nede i footeren. Af den grund valgte jeg at lave det til en pop-up modal, der kommer efter man accepterer cookies, og fjernede den fra footeren, så brugeren er tvunget til at tage et valg, samt at den
             bliver lagt mærke til. Ydermere fik jeg feedback på, at det var svært at gennemskue, hvad næste skridt var efter at et produkt var lagt i kurven. Derfor har jeg lavet endnu en pop-up, der fortæller brugerne at produktet er i kurven, og der bliver givet
             valgmulighederne om at shoppe videre eller gå til kurven.
           </p>
-          <div class="ux-forbedring-img"><img src="img/ux-forbedring-1.webp" alt="ux løsning" /><img src="img/ux-forbedring-2.webp" alt="ux løsning" /></div>
+          <div class="two-col-vertical">
+            <img src="img/ux-forbedring-1.webp" alt="ux løsning" />
+            <img src="img/ux-forbedring-2.webp" alt="ux løsning" />
+          </div>
         </div>
+
+        <div class="btn-container"><button class="cta" onclick="location.href='https://xd.adobe.com/view/22b83dc3-7aab-405c-a5cb-93fb9e305601-77eb/'">Se min færdige prototype ved at klikke her</button></div>
       </article>
     </main>
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">
-        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instagram icon" /></a>
         <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
         <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>

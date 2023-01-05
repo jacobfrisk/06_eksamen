@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles/global-styles.css" />
     <link rel="stylesheet" href="styles/theme-styles.css" />
-    <title>Home | Jacob Friis Strand</title>
+    <title>Tema 2 | Jacob Friis Strand</title>
   </head>
   <body>
     <header>
@@ -20,7 +20,7 @@
           <span class="hamburger"></span>
         </button>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a class="link" href="work.html">Portfolio</a></li>
           <li><a class="link" href="about.html">Om</a></li>
@@ -36,33 +36,32 @@
     </header>
     <main>
       <article>
-        <div class="theme__knowlegde__section">
-          <p class="theme__knowledge__section__text">
-            I tema 2 lærte vi blandt andet om flexbox og grid, som er måder at skabe et layout af HTML elementer i CSS. <br />
-            Flexbox virker kun i en dimension (en række eller kolonne), hvorimod grid virker i to dimensioner, rækker og kolonner.
-          </p>
+        <div class="two-col">
+          <p>I tema 2 lærte vi blandt andet om flexbox og grid, som er måder at skabe et layout af HTML elementer i CSS. Flexbox virker kun i en dimension (en række eller kolonne), hvorimod grid virker i to dimensioner, rækker og kolonner.</p>
+          <img class="theme-icon" src="icons/css-icon.svg" alt="css icon" />
         </div>
-        <div class="theme__skills__section">
-          <p class="theme__skills__section__text">
+        <div class="two-col">
+          <p>
             På forsiden af mit emnesite valgte jeg at bruge grid til at lave et layout af to billeder, der overlapper hinanden. Dette gjorde jeg ved at lave en container med de to billeder og lave et grid med tre kolonner. Herefter gav jeg de individuelle billeder deres grid
             positioner, sådan at de kunne overlappe hinanden, ved at de begge spænder indover hinandens grid kolonne og grid række.
           </p>
-          <video class="gif" loop autoplay muted src="videos/tema-2-demonstration.webm"></video>
+          <video loop autoplay muted src="videos/tema-2-demonstration.webm"></video>
         </div>
-        <div class="theme__competence__section">
-          <p class="theme__competence__section__text">Jeg ville ikke kunne opnå det ønskede layout ved at bruge flexbox, da det kun er en-dimensionelt, og billederne derfor kun ville kunne stå ved siden af hinanden eller ovenpå hinanden.</p>
-          <img src="img/tema-2-produkt.webp" alt="" class="theme__competence__section__img" />
+        <div class="two-col">
+          <p>Jeg ville ikke kunne opnå det ønskede layout ved at bruge flexbox, da det kun er en-dimensionelt, og billederne derfor kun ville kunne stå ved siden af hinanden eller ovenpå hinanden.</p>
+          <img src="img/tema-2-produkt.webp" alt="tema 2 grid eksempel" />
         </div>
+        <div class="btn-container"><button class="cta" onclick="location.href='https://www.jacobstrand.dk/kea/02_web/01_website/emnesite/index.html?1'">Se mit færdige emnesite ved at klikke her</button></div>
       </article>
     </main>
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">
-        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instagram icon" /></a>
         <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
         <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>

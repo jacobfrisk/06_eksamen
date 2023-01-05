@@ -20,7 +20,7 @@
           <span class="hamburger"></span>
         </button>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a class="link" href="work.html">Portfolio</a></li>
           <li><a class="link" href="about.html">Om</a></li>
@@ -32,9 +32,9 @@
       <section class="contact">
         <div class="contact__copy">
           <h1 class="contact__header">Jeg leder altid efter nye muligheder, og vil meget gerne høre fra dig.</h1>
-          <p class="contact__subheader">Udfyld kontaktformularen, og jeg vil vende tilbage til dig.</p>
+          <p class="contact__subheader">Udfyld kontaktformularen og jeg vil vende tilbage til dig.</p>
         </div>
-        <form class="contact__form">
+        <form class="contact__form" netlify>
           <label for="name">Navn</label>
           <input type="text" id="name" name="name" placeholder="Dit navn" />
           <label for="tel">Telefon</label>
@@ -50,11 +50,11 @@
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">
-        <a href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instagram icon" /></a>
         <a href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
         <a href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>

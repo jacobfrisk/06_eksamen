@@ -31,7 +31,6 @@
 
 .intro > * {
   margin-block: var(--m-spacing);
-  animation: intro-load 1s ease-in-out;
 }
 
 .intro__cta {
@@ -39,14 +38,4 @@
   /* flex-direction: column; */
   /* gap: var(--xs-spacing); */
   justify-content: space-around;
-}
-
-@keyframes intro-load {
-  0% {
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-  }
 }

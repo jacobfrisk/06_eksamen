@@ -76,7 +76,13 @@
 }
 
 .divider-vertical {
-  width: 3px;
+  width: 2px;
   margin: 40px;
   background: var(--border-clr);
+}
+
+.skills__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

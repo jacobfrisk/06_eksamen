@@ -35,3 +35,9 @@ var logo = document.querySelector(".logo");
 window.addEventListener("scroll", function () {
   logo.style.transform = "rotate(" + window.pageYOffset + "deg)";
 });
+
+function stopAnimation() {
+  if (window.innerWidth < 810) {
+    logo.style.transform = "stop";
+  }
+}

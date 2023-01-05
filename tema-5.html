@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles/global-styles.css" />
     <link rel="stylesheet" href="styles/theme-styles.css" />
-    <title>Home | Jacob Friis Strand</title>
+    <title>Tema 5 | Jacob Friis Strand</title>
   </head>
   <body>
     <header>
@@ -20,23 +20,61 @@
           <span class="hamburger"></span>
         </button>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a class="link" href="work.html">Portfolio</a></li>
           <li><a class="link" href="about.html">Om</a></li>
           <li><a class="link" href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li><a class="link" href="work.html">Portfolio</a></li>
+          <li><span class="link" aria-current="page">Tema 5</span></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <article>
+          <div class="two-col">
+            <p>I modsætning til de andre temaer på dette semester, har vi arbejdet i grupper. Gruppearbejdet endte ud i et redesign af Café Kafs website, samt produktion af videoindhold både til deres hjemmeside men også en kvadratisk udgave til sociale medier.</p>
+            <img class="theme-icon" src="img/tegnet_kaffekop.png" alt="tegnet kaffekop" />
+          </div>
+          <div class="two-col-two-row">
+            <p>
+              En af de færdigheder jeg lærte under dette tema var brug af custom properties i CSS. Custom properties i CSS er egendefinerede værdier, hvor det er muligt at referere til dem andre steder i filen. Dette gør det nemmere at ændre for eksempel fonte og farver og
+              tilpasse dem efter behov. <br />
+              <br />
+              Vi valgte i gruppen at strukturere vores arbejde ved hjælp af en udgave af SCRUM, der er en praktisk måde at holde overblik og fordele opgaver blandt gruppens medlemmer. SCRUM boarded viste sig at være en god måde at sørge for at alle opgaver blev fordelt ligeligt
+              ud alle og samtidig at de blev lavet til tiden.
+            </p>
+
+            <img src="img/custom-properties-example.webp" alt="Eksempel på custom properties" />
+
+            <img src="img/scrum-board.webp" alt="Scrum board" />
+          </div>
+
+          <div class="one-col">
+            <p>
+              Brugen af custom properties kom os til gode, da vi efter at have lavet en Lighthouse test på vores side, fandt ud af, at kontrasten mellem baggrundsfarven og link farven ikke var stor nok. Ved at have brugt custom properties var det nemt at ændre farven på linket,
+              da alternativet kunne have været at vi skulle lede efter farven alle de steder, vi havde brugt den i koden, og derved minimerer dobbeltarbejde. En anden god brug af custom properties kunne være at cafeen eksempelvis ville have en anden farve på brødteksten. Dette
+              ville også være let at ændre, da det kun ville være selve property'en der skulle ændres.
+            </p>
+            <img src="img/lighthouse-test.webp" alt="lighthouse test" />
+          </div>
+          <div class="btn-container"><button class="cta" onclick="location.href='https://jacobfrisk.github.io/02_redesign/index.html'">Se vores færdige site og video her</button></div>
+        </article>
+      </section>
+    </main>
     <footer>
       <p class="footer__text"><span id="year"></span> © Jacob Friis Strand. All rights reserved.</p>
       <div class="contact-icons">
-        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instragram icon" /></a>
+        <a target="_blank" href="https://www.instagram.com/peritia.studio/"><img class="some-icon" src="icons/instagram-icon.svg" alt="instagram icon" /></a>
         <a target="_blank" href="mailto:jaco576u@stud.kea.dk"><img class="some-icon" src="icons/email-icon.svg" alt="email icon" /></a>
         <a target="_blank" href="https://www.linkedin.com/in/jacob-friis-strand/"><img class="some-icon" src="icons/linkedin-icon.svg" alt="linkedin icon" /></a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>
