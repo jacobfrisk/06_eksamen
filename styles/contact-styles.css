@@ -58,3 +58,7 @@ input::placeholder {
   font-size: var(--h2-fs);
   margin-bottom: var(--m-spacing);
 }
+
+.full-width {
+  width: 100%;
+}
