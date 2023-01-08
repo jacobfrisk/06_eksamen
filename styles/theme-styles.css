@@ -53,7 +53,7 @@ div.two-col:nth-child(2) > img:nth-child(2) {
   max-width: 100px;
 }
 
-img {
+img:not(.logo) {
   margin-bottom: var(--m-spacing);
 }
 
@@ -126,4 +126,8 @@ img {
 img:not(.theme-icon, .logo, .some-icon),
 video {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.one-col > p:nth-child(1) {
+  text-align: left;
 }
