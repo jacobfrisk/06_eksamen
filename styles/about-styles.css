@@ -17,7 +17,7 @@
   }
 
   section {
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   div.section__skills__item:nth-child(2) {
@@ -40,11 +40,11 @@
   }
 
   .cv__section {
-    transition-delay: 600ms;
+    transition-delay: 400ms;
   }
 
   .school__section {
-    transition-delay: 1200ms;
+    transition-delay: 800ms;
   }
 }
 
