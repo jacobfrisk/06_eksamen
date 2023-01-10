@@ -71,8 +71,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg-clr);
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 /*
   6. Improve media defaults
@@ -209,10 +207,7 @@ main {
   width: 80%;
   max-width: 1200px;
   margin-inline: auto;
-  /* min-height: calc(100vh - 95.2167px - 94px); */
-  /* display: grid; */
-  align-items: center;
-  place-items: center;
+  min-height: calc(100vh - 95.2167px - 94px);
 }
 
 section {

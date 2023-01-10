@@ -15,7 +15,7 @@
   }
 
   .intro__copy {
-    grid-column: 3 / span 3;
+    grid-column: 3 / span 4;
     grid-row: 3;
   }
 
@@ -42,4 +42,5 @@
 
 main {
   display: grid;
+  place-items: center;
 }
