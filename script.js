@@ -27,9 +27,17 @@ function toggleMenu() {
 // Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
 btn.addEventListener("click", toggleMenu);
 
+//
+//
+//
+//
+//
+//
+
 // Årstal på footer
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+// Scroll animation på logo
 var logo = document.querySelector(".logo");
 
 window.addEventListener("scroll", function () {
@@ -41,3 +49,26 @@ function stopAnimation() {
     logo.style.transform = "stop";
   }
 }
+
+//
+//
+//
+//
+//
+//
+
+// Scroll animations
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  { threshold: [0.5] }
+);
+
+const hiddenElements = document.querySelectorAll(".hidden, hidden-left");
+hiddenElements.forEach((el) => observer.observe(el));

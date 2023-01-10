@@ -15,6 +15,37 @@
     justify-content: space-between;
     text-align: center;
   }
+
+  section {
+    min-height: 100vh;
+  }
+
+  div.section__skills__item:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  div.section__skills__item:nth-child(3) {
+    transition-delay: 400ms;
+  }
+  div.section__skills__item:nth-child(4) {
+    transition-delay: 600ms;
+  }
+  div.section__skills__item:nth-child(5) {
+    transition-delay: 800ms;
+  }
+  div.section__skills__item:nth-child(6) {
+    transition-delay: 1000ms;
+  }
+  div.section__skills__item:nth-child(7) {
+    transition-delay: 1200ms;
+  }
+
+  .cv__section {
+    transition-delay: 600ms;
+  }
+
+  .school__section {
+    transition-delay: 1200ms;
+  }
 }
 
 .portrait {
@@ -76,9 +107,10 @@
 }
 
 .divider-vertical {
-  width: 2px;
+  width: 4px;
   margin: 40px;
   background: var(--border-clr);
+  border-radius: 10px;
 }
 
 .skills__section {
